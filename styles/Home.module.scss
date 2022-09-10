@@ -127,3 +127,15 @@
     filter: invert(1);
   }
 }
+
+.imageContainer {
+  >span { // ⭐️ Next12未満では span -> div に変更する必要があります。詳細は後ほど説明します。
+    position: unset !important;
+  }
+
+  .image {
+    position: relative !important;
+    width: 100% !important;
+    height: unset !important;
+  }
+}
